@@ -22,3 +22,5 @@ Instead, to propose a change, please fork [pantheon-systems/drupal-composer-mana
 and submit a PR to that repository.
 test string added to READ.me
 check how MT works
+
+pJK$v77U.kDvg.p
