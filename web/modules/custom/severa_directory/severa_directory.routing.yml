@@ -5,3 +5,11 @@ severa_directory.respond:
     _title: "Severa Respond"
   requirements:
     _permission: "access content"
+
+severa_directory.movapi_config_page:
+  path: "/admin/config/movie-api"
+  defaults:
+    _form: '\Drupal\severa_directory\Form\MovieAPI'
+    _title: "Movie API - Settings"
+  requirements:
+    _permission: "administer site configuration"
