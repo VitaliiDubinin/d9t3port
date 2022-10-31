@@ -54,5 +54,14 @@ class MovieAPI extends FormBase {
 
     return $form;
   }
+  
+  public function submitForm(array &$form, FormStateInterface $form_state) {
+    $submitted_values = $form_state->cleanValues()->getValues();
+
+    \Drupal::state()->set(self::MOVIE_API_CONFIG_PAGE, $submitted_values);
+
+    $messenger = \Drupal::service('messenger');
+    $messenger->addMessage($this->t('Your new configuration has been saved.'));
+  }
 
 }
