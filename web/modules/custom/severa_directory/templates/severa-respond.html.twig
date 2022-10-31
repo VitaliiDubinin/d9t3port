@@ -1,1 +1,9 @@
-{{ content.name }}
+{# {{ content.name }} #}
+
+<div>
+{% if content.movies is not empty %}
+    {% for movie in content.movies %}
+        {{ movie }}
+    {% end for %}
+{% end if %}
+</div>
