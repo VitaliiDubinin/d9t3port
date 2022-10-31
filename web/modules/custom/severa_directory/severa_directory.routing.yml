@@ -1,0 +1,7 @@
+severa_directory.respond:
+  path: "/severa-respond"
+  defaults:
+    _controller: '\Drupal\severa_directory\Controller\SeveraRespond::view'
+    _title: "Severa Respond"
+  requirements:
+    _permission: "access content"
