@@ -19,8 +19,8 @@ class SeveraRespond extends ControllerBase {
       }
 
       public function listMovies(){
-        /** @var \MovieAPIConnector $severa_api_connector_service */
-
+        /** @var \Drupal\severa_directory\MovieAPIConnector $severa_api_connector_service */
+        $severa_api_connector_service = \Drupal::service(id:'severa_directory.api_connector');
         $movie_list = $severa_api_connector_service->discoverMovies();
         if(!empty($movie_list -> results)){
           return $movie_list->results;
@@ -29,7 +29,8 @@ class SeveraRespond extends ControllerBase {
       }
 
       public function createMovieCard(){
-
+        /** @var \Drupal\severa_directory\MovieAPIConnector $severa_api_connector_service */
+        $severa_api_connector_service = \Drupal::service(id:'severa_directory.api_connector');
 
         $movieCards=[];
         $movies = $this->listMovies();
