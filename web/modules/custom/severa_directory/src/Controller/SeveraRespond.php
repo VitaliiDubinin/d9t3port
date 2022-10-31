@@ -30,7 +30,7 @@ class SeveraRespond extends ControllerBase {
 
       public function createMovieCard(){
         /** @var \Drupal\severa_directory\MovieAPIConnector $severa_api_connector_service */
-        $severa_api_connector_service = \Drupal::service(id:'severa_directory.api_connector');
+        $severa_api_connector_service = \Drupal::service('severa_directory.api_connector');
 
         $movieCards=[];
         $movies = $this->listMovies();
