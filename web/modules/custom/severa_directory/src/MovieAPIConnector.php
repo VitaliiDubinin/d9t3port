@@ -33,7 +33,7 @@ public function discoverMovies(){
         $data =json_decode($result);
     }
     catch(GuzzleHttp\Exception\RequestException $e){
-        watchdog_exception(type:'severa_directory', $e, $e->getMessage());
+        watchdog_exception('severa_directory', $e, $e->getMessage());
     }
     return $data;
 }
