@@ -6,7 +6,7 @@ severa_directory.respond:
   requirements:
     _permission: "access content"
 
-severa_directory.movapi_config_page:
+severa_directory.api_config_page:
   path: "/admin/config/movie-api"
   defaults:
     _form: '\Drupal\severa_directory\Form\MovieAPI'

@@ -56,5 +56,3 @@ class MovieAPI extends FormBase {
   }
 
 }
-
-?>
