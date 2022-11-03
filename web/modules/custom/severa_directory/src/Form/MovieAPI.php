@@ -28,12 +28,13 @@ class MovieAPI extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $values = \Drupal::state()->get(self::MOVIE_API_CONFIG_PAGE);
+    $form=[];
 
     $form['api_base_url'] = [
       '#type' => 'textfield',
       '#title' => $this->t('API Base URL'),
       '#description' => $this->t('This is the API Base URL'),
-      '#default_value' => ($values['api_base_url']) ?: 'https://api.themoviedb.org/3',
+      '#default_value' => ($values['api_base_url']) ?: 'https://api.themoviedb.org',
       '#required' => TRUE,
     ];
 

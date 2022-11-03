@@ -5,59 +5,62 @@ namespace Drupal\severa_directory\Controller;
 use Drupal\Core\Controller\ControllerBase;
 
 class SeveraRespond extends ControllerBase {
-    public function view() {
-      $this->listMovies();
+    public function view() 
+    {
+        $this->dataList();
         $content = [];
     
         $content['name'] = 'My name is Severa';
-        $content['movies']=$this->createMovieCard();
+        $content['cards']=$this->requestCards();
     
         return [
           '#theme' => 'severa-respond',
           '#content' => $content,
         ];
-      }
+    }
 
-      public function listMovies(){
-        /** @var \Drupal\severa_directory\MovieAPIConnector $severa_api_connector_service */
+      public function dataList()
+      {
+        /** @var \Drupal\severa_directory\SeveraAPIConnector $severa_api_connector_service */
         $severa_api_connector_service = \Drupal::service('severa_directory.api_connector');
-        $movie_list = $severa_api_connector_service->discoverMovies();
-        if(!empty($movie_list -> results)){
-          return $movie_list->results;
+
+        $customer_list = $severa_api_connector_service->findCustomer();
+        // if(!empty($customer_list -> results)){
+        //   return $customer_list->results;
+        if(!empty($customer_list)){
+          return $customer_list;
+        } else {
+        return  [1,2,3];
         }
-        return[];
       }
 
-      public function createMovieCard(){
-        /** @var \Drupal\severa_directory\MovieAPIConnector $severa_api_connector_service */
-        $severa_api_connector_service = \Drupal::service('severa_directory.api_connector');
 
-        $movieCards=[];
-        $movies = $this->listMovies();
-        if(!empty($movies)){
-          foreach ($movies as $movie){
 
+      public function requestCards()
+      {
+        $requestCard=[];
+        $cards = $this->dataList();
+        // dump($movies);
+        if(!empty($cards))
+        {
+          foreach ($cards as $card)
+          {
             $content =[
-              'title'=>$movie->title,
-              'description'=>$movie->overview,
-              'movie_id'=>$movie->id,
-
+              // 'title'=>$card->title,
+              // 'description'=>$card->overview,
+              // 'movie_id'=>$card->id
+              'title'=>$card->name,
+              'description'=>$card->number,
+              'movie_id'=>$card->owner,
             ];
-
-            $movieCards[]=[
-              '#theme'=>'movie-card',
+            $requestCard[]=[
+              '#theme'=>'severa-card',
               '#content'=>$content,
-
-
-            ];
-
-          
+            ];          
           }
         }
-
-        return $movieCards;
-
-
+        return $requestCard;
       }
+
 
 }
