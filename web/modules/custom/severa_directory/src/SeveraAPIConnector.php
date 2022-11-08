@@ -47,7 +47,7 @@ public function findCustomer(){
         $client = new Client();
         $headers = [
             'client_id' => 'DruidOy_ofoRepCSMeeUd7M2nY.apps.vismasevera.com',
-            'Authorization' => 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRzdWIiOjU0NTc0MSwiY2xpZW50b3JnIjo0MTQ1NCwiY2xpZW50ZGIiOjYsImNsaWVudGlkIjoiRHJ1aWRPeV8wYzFxVnpydDlMQkF1TExvZ1AuYXBwcy52aXNtYXNldmVyYS5jb20iLCJzY29wZSI6IjAwMDEwMDAwMDAwMDAwMDAiLCJleHAiOjE2Njc5MTUwNTAsImlzcyI6IlNldmVyYV9QdWJsaWNSZXN0X0FQSSIsImlhdCI6MTY2NzkxMTQ1MCwibmJmIjoxNjY3OTExNDUwfQ.BojXSaJcN8WjWOGFTYzUsTzubdixg9Qry4WeziBmPbTbOFHgupui3X2BDiWir8P4BmBrcFc3qAYYBiSfgDFzKA'
+            'Authorization' => 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRzdWIiOjU0NTc0MSwiY2xpZW50b3JnIjo0MTQ1NCwiY2xpZW50ZGIiOjYsImNsaWVudGlkIjoiRHJ1aWRPeV8wYzFxVnpydDlMQkF1TExvZ1AuYXBwcy52aXNtYXNldmVyYS5jb20iLCJzY29wZSI6IjAwMDEwMDAwMDAwMDAwMDAiLCJleHAiOjE2Njc5MjYwMjUsImlzcyI6IlNldmVyYV9QdWJsaWNSZXN0X0FQSSIsImlhdCI6MTY2NzkyMjQyNSwibmJmIjoxNjY3OTIyNDI1fQ.GGLCtzcQLsGWqZMl2qEZlDhkvxv8vSJuNYPBpnyRvAnqkK9D0UR7Fs1e2j0AxEZuqr1JAJOtiqKZhIV7NotpKg'
           ];
 
         $request = new Request('GET', 'https://api.severa.visma.com/rest-api/v1/customers', $headers);
