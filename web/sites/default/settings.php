@@ -33,3 +33,5 @@ if (file_exists($local_settings)) {
   include $local_settings;
 }
 $config['system.logging']['error_level']='verbose';
+$config['client_id']='verbose';
+$config['client_secret']='verbose';
