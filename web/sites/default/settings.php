@@ -35,3 +35,7 @@ if (file_exists($local_settings)) {
 $config['system.logging']['error_level']='verbose';
 $config['client_id']='verbose';
 $config['client_secret']='verbose';
+
+ini_set('session.cookie_secure', 1);
+ini_set('session.cookie_samesite', 'None');
+
