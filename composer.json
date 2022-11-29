@@ -25,7 +25,8 @@
         "drupal/key": "^1.16",
         "drupal/feeds": "^3.0@beta",
         "drupal/feeds_ex": "^1.0@beta",
-        "drupal/feeds_fetcher_headers": "^1.0"
+        "drupal/feeds_fetcher_headers": "^1.0",
+        "drupal/restui": "^1.21"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
