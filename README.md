@@ -21,3 +21,11 @@ https://api.themoviedb.org/3/discover/movie/?api_key=8804da8efecd504320eb35f0438
 
 6. lando db-import
    ando db-import drupal9.2022-11-29-1669733238.sql.gz
+
+7. activate the modules from UI
+   (please, do it module by module and clear the cash after each of):
+   feeds
+   feeds_ex
+   feeds_fetcher_headers
+   key
+   REST
