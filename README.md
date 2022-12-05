@@ -20,7 +20,7 @@ https://api.themoviedb.org/3/discover/movie/?api_key=8804da8efecd504320eb35f0438
    'database.d9tsport.internal' (advance settings)
 
 6. lando db-import
-   ando db-import drupal9.2022-11-29-1669733238.sql.gz
+   ando db-import d9t3port_dev_2022-12-05T14-45-07_UTC_database.sql
 
 7. activate the modules from UI
    (please, do it module by module and clear the cash after each of):
