@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0247a9b15f10f5f33e7e85101735f09",
+    "content-hash": "90613ce213cf8f3fcf90d740ae0a605b",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -2041,6 +2041,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/key",
                 "issues": "http://drupal.org/project/key"
+            }
+        },
+        {
+            "name": "drupal/rest_password",
+            "version": "8.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rest_password.git",
+                "reference": "8.1.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rest_password-8.1.16.zip",
+                "reference": "8.1.16",
+                "shasum": "b83e95ea98006be9bdfe2dc6f8c36ae230e45d52"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.1.16",
+                    "datestamp": "1666472965",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "glynster",
+                    "homepage": "https://www.drupal.org/user/407333"
+                },
+                {
+                    "name": "taggartj",
+                    "homepage": "https://www.drupal.org/user/786470"
+                }
+            ],
+            "description": "Rest service to request forgotten password.",
+            "homepage": "https://www.drupal.org/project/rest_password",
+            "support": {
+                "source": "https://git.drupalcode.org/project/rest_password"
             }
         },
         {
