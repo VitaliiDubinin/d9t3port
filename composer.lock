@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90613ce213cf8f3fcf90d740ae0a605b",
+    "content-hash": "d36bde297c248d2137272cec3a44ad4b",
     "packages": [
         {
             "name": "arthurkushman/query-path",
@@ -10950,7 +10950,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "pantheon-upstreams/upstream-configuration": 20,
         "drupal/feeds": 10,
